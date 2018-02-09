@@ -1,0 +1,5 @@
+/home/parallels/Desktop/practice/practice/practice/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/parallels/Desktop/practice/practice/practice/bin/Debug/practice.pdb
+/home/parallels/Desktop/practice/practice/practice/bin/Debug/practice.exe
+/home/parallels/Desktop/practice/practice/practice/obj/x86/Debug/practice.exe
+/home/parallels/Desktop/practice/practice/practice/obj/x86/Debug/practice.pdb
