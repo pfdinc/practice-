@@ -34,7 +34,7 @@ namespace practice
 			//Console.Write(String.Join(a.reverseArray(y)));
 			for(int i = 0 ; i < x.Length ; i++){
 				//Console.Write( x[i]);
-			a.reverseArray(x[i]);
+			//a.reverseArray(x[i]);
 			//	Console.Write(z);
 			}
 
