@@ -5,11 +5,8 @@ namespace practice
 
 	class MainClass
 	{
-	
-
-
+		//reverse array 
 		public T[] reverseArray<T>(T[] n){
-
 			//size of array n
 			int arraySize = n.Length;
 			//this is where we will place the reversed array
@@ -26,7 +23,7 @@ namespace practice
 		} 		
 
 
-
+/*#####################################################################################################################333*/
 		public static void Main (string[] args)
 		{
 			MainClass a = new MainClass();
@@ -38,7 +35,7 @@ namespace practice
 
 			for(int i = 0 ; i < x.Length ; i++){
 				//Console.Write( x[i]);
-			//	a.reverseArray(x[i]);
+			a.reverseArray(x[i]);
 				Console.Write(z);
 			}
 
@@ -49,7 +46,7 @@ namespace practice
 
 practice-
 
-challenges 
+random challenges 
 
 General
 
