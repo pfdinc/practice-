@@ -29,14 +29,13 @@ namespace practice
 			MainClass a = new MainClass();
 			int[] x = new[] {1,2,9,6,7 };
 			string[] y = new[] {"uytio" };
-		
 			int[] z;
-			//Console.Write(String.Join(a.reverseArray(y)));
 
+			//Console.Write(String.Join(a.reverseArray(y)));
 			for(int i = 0 ; i < x.Length ; i++){
 				//Console.Write( x[i]);
 			a.reverseArray(x[i]);
-				Console.Write(z);
+			//	Console.Write(z);
 			}
 
 		}
