@@ -1,4 +1,14 @@
-﻿using System;
+/*
+NOTE: Not done!
+
+*/
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.IO;
+
 
 namespace practice
 {
@@ -6,38 +16,64 @@ namespace practice
 	class MainClass
 	{
 		//reverse array 
-		public T[] reverseArray<T>(T[] n){
+		public void reverseArray<T>(T[] n){
 			//size of array n
 			int arraySize = n.Length;
-			//this is where we will place the reversed array
 			T[] reversedArray = new T[arraySize];
 			int count = 0;
-			for(int i = arraySize; i > arraySize; --i){
-				//this will reverse the array
-			//	reverseArray[count] = new n[i];
-				//count 
+			Console.WriteLine("array before reversal");
+
+
+			Console.WriteLine("array reversed");
+			for(int i = arraySize -1; i >= 0; i--){
+				//this will reverse the array;
+				reversedArray[count] = n[i];
+				Console.Write(reversedArray[count]);
 				count++;
 			}
-
-			return n;
+			Console.WriteLine();
 		} 		
 
 
-/*#####################################################################################################################333*/
-		public static void Main (string[] args)
-		{
-			MainClass a = new MainClass();
-			int[] x = new[] {1,2,9,6,7 };
-			string[] y = new[] {"uytio" };
-			int[] z;
+		//readline 
+		public char[] customeReadLine( string[] value, int arraySize){
+			int counter = 0;
+			char[] a = new char[0];
+			while(counter != arraySize){
+				Console.Write ("Array [{0}] = ", counter);
+				//string array to char array 
+				value[counter] = Console.ReadLine();
+			counter++;
+				a = string.Join(string.Empty,value).ToCharArray();
 
-			//Console.Write(String.Join(a.reverseArray(y)));
-			for(int i = 0 ; i < x.Length ; i++){
+			} 
+			Console.Write (a);
+			return a; 
+		}
+			
+
+/*#####################################################################################################################333*/
+		public static int Main (string[] args)
+		{
+			MainClass app = new MainClass();
+			//string[] y = new[]{"Hello " , "World "};
+			int arraySize;
+			Console.Write ("what is the array size ");
+			//this willl take the users array size
+			arraySize = Convert.ToInt32(Console.ReadLine());
+			string[] x = new string[arraySize] ;
+
+			app.customeReadLine (x, arraySize);
+			app.reverseArray (x);
+
+
 				//Console.Write( x[i]);
 			//a.reverseArray(x[i]);
 			//	Console.Write(z);
-			}
 
+				//a.reverseArray(x);
+
+			return 0;
 		}
 	}
 }
